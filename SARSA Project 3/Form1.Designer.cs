@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.FindGoldBtn = new System.Windows.Forms.Button();
-            this.MoveOneBtn = new System.Windows.Forms.Button();
+            this.RunOneEpisodeBtn = new System.Windows.Forms.Button();
+            this.TestBtn = new System.Windows.Forms.Button();
+            this.RunEpisodesBtn = new System.Windows.Forms.Button();
+            this.TestDrawBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,36 +46,59 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // FindGoldBtn
+            // RunOneEpisodeBtn
             // 
-            this.FindGoldBtn.Location = new System.Drawing.Point(779, 55);
-            this.FindGoldBtn.Name = "FindGoldBtn";
-            this.FindGoldBtn.Size = new System.Drawing.Size(75, 23);
-            this.FindGoldBtn.TabIndex = 4;
-            this.FindGoldBtn.Text = "Find Gold";
-            this.FindGoldBtn.UseVisualStyleBackColor = true;
-            this.FindGoldBtn.Click += new System.EventHandler(this.FindGoldBtn_Click);
+            this.RunOneEpisodeBtn.Location = new System.Drawing.Point(659, 188);
+            this.RunOneEpisodeBtn.Name = "RunOneEpisodeBtn";
+            this.RunOneEpisodeBtn.Size = new System.Drawing.Size(122, 72);
+            this.RunOneEpisodeBtn.TabIndex = 6;
+            this.RunOneEpisodeBtn.Text = "Run One Episode And Display Dora\'s Path";
+            this.RunOneEpisodeBtn.UseVisualStyleBackColor = true;
+            this.RunOneEpisodeBtn.Click += new System.EventHandler(this.RunOneEpisodeBtn_Click);
             // 
-            // MoveOneBtn
+            // TestBtn
             // 
-            this.MoveOneBtn.Location = new System.Drawing.Point(779, 134);
-            this.MoveOneBtn.Name = "MoveOneBtn";
-            this.MoveOneBtn.Size = new System.Drawing.Size(75, 23);
-            this.MoveOneBtn.TabIndex = 5;
-            this.MoveOneBtn.Text = "One Move";
-            this.MoveOneBtn.UseVisualStyleBackColor = true;
-            this.MoveOneBtn.Click += new System.EventHandler(this.MoveOneBtn_Click);
+            this.TestBtn.Location = new System.Drawing.Point(681, 44);
+            this.TestBtn.Name = "TestBtn";
+            this.TestBtn.Size = new System.Drawing.Size(75, 23);
+            this.TestBtn.TabIndex = 7;
+            this.TestBtn.Text = "TestBtn";
+            this.TestBtn.UseVisualStyleBackColor = true;
+            this.TestBtn.Visible = false;
+            this.TestBtn.Click += new System.EventHandler(this.TestBtn_Click);
+            // 
+            // RunEpisodesBtn
+            // 
+            this.RunEpisodesBtn.Location = new System.Drawing.Point(659, 298);
+            this.RunEpisodesBtn.Name = "RunEpisodesBtn";
+            this.RunEpisodesBtn.Size = new System.Drawing.Size(122, 110);
+            this.RunEpisodesBtn.TabIndex = 8;
+            this.RunEpisodesBtn.Text = "Run 10000 Episodes";
+            this.RunEpisodesBtn.UseVisualStyleBackColor = true;
+            this.RunEpisodesBtn.Click += new System.EventHandler(this.RunEpisodesBtn_Click);
+            // 
+            // TestDrawBtn
+            // 
+            this.TestDrawBtn.Location = new System.Drawing.Point(666, 131);
+            this.TestDrawBtn.Name = "TestDrawBtn";
+            this.TestDrawBtn.Size = new System.Drawing.Size(115, 23);
+            this.TestDrawBtn.TabIndex = 9;
+            this.TestDrawBtn.Text = "Redraw Arrows";
+            this.TestDrawBtn.UseVisualStyleBackColor = true;
+            this.TestDrawBtn.Click += new System.EventHandler(this.TestDrawBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 732);
-            this.Controls.Add(this.MoveOneBtn);
-            this.Controls.Add(this.FindGoldBtn);
+            this.ClientSize = new System.Drawing.Size(811, 732);
+            this.Controls.Add(this.TestDrawBtn);
+            this.Controls.Add(this.RunEpisodesBtn);
+            this.Controls.Add(this.TestBtn);
+            this.Controls.Add(this.RunOneEpisodeBtn);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SARSA learning with eligibility trace";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -82,8 +107,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button FindGoldBtn;
-        private System.Windows.Forms.Button MoveOneBtn;
+        private System.Windows.Forms.Button RunOneEpisodeBtn;
+        private System.Windows.Forms.Button TestBtn;
+        private System.Windows.Forms.Button RunEpisodesBtn;
+        private System.Windows.Forms.Button TestDrawBtn;
     }
 }
 
